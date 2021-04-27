@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Create Inventory</title>
+<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+<script src="../js/script.js"></script>
+<script src="js/createInventory.js"></script>
+</head>
+<body>
+<div id="banner">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../index.html">Home</a>
+    <a href="../admin.html">Admin</a>
+    <a href="../getAllItems/getAllItems.html">List All Items</a>
+    <a href="../getInventory/getInventory.html">List All Inventory</a>
+    <a href="../getAllStores/getAllStores.html">List All Stores</a>
+    <a href="../updateInventory/updateInventory.html">Update Inventory</a>
+    <a href="../createStore/createStore.html">Create Store</a>
+    <a href="../deleteStore/deleteStore.html">Delete Store</a>
+    <a href="../createItem/createItem.html">Create Item</a>
+    <a href="../deleteItem/deleteItem.html">Delete Item</a>
+    <a href="../createInventory/createInventory.html">Create Inventory</a>
+    <a href="../deleteInventory/deleteInventory.html">Delete Inventory</a>
+  </div>
+  <span onclick="openNav()"><img id="menu"; src="../images/hamburger.png" alt="Open Menu" width="25px" height="25px"></span>
+</div>
+<div id="main-content">
+  <h3>Enter Information For New Inventory</h3>
+  <br>
+  <p>Enter Item ID:</p>
+  <input id="itemId"><br>
+  <p>Enter Store ID:</p>
+  <input id="storeId"><br>
+  <p>Enter Item Quantity:</p>
+  <input id="quantity"><br><br>
+  <button onclick="createInventory()">Submit</button>
+</div>
+</body>
+</html>
